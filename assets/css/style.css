@@ -1,55 +1,61 @@
-*{
-   font-family: Arial, Helvetica, sans-serif;
-   font-size-adjust: initial
+* {
+    font-family: Arial, Helvetica, sans-serif;
 }
-body{
+
+body {
     background-image: url("../images/sayagata-400px.png");
 }
-header{
+
+header {
     padding: 15px;
     background-color: beige;
     width: 100%;
     display: inline-block;
     z-index: 10;
 }
-h1{
+
+h1 {
     float: left;
     margin: 0% 0% 0% 10%;
-    padding: 20px;
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 50px
+    font-size: 50px;
 }
-h3{
+
+h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     clear: both;
     margin-left: 2%;
 }
+
 /*a{
     float: right;
     margin: 1% 1% 1% 1%;
     background-color: aqua;
     padding: 20px
 }*/
-#contact{
-    float: right;
-    margin: 2% 0% 1% 0%;
-    padding: 10px;
-    border-right: 1px solid black;
 
-}
-#portfolio{
+#contact {
     float: right;
     margin: 2% 0% 1% 0%;
     padding: 10px;
     border-right: 1px solid black;
 }
-#about{
+
+#portfolio {
+    float: right;
+    margin: 2% 0% 1% 0%;
+    padding: 10px;
+    border-right: 1px solid black;
+}
+
+#about {
     float: right;
     margin: 2% 0% 1% 0%;
     padding: 10px;
 }
-.otherdiv{
+
+.otherdiv {
     margin: 5% 10% 5% 10%;
     width: 70%;
     background-color: beige;
@@ -57,35 +63,37 @@ h3{
     position: relative;
     left: 5%
 }
-img{
+
+img {
     width: 100%;
     padding: 5px;
     float: left;
 }
-.container{
+
+.container {
     float: left;
     width: 20%;
     padding: 5%;
-
 }
-.textblock{
+
+.textblock {
     position: relative;
     bottom: 32px;
     left: 5px;
     background-color: beige;
     padding: 10px;
     opacity: 0.7;
-
 }
-#portid{
+
+#portid {
     margin: 5% 10% 5% 10%;
     background-color: beige;
-    padding: 20px;
     width: 70%;
     position: relative;
     left: 5%;
     /* top: 15%; */
 }
+
 /*
 .textblock{
     position: relative;
@@ -108,58 +116,119 @@ img{
     position: relative;
     left: 5%;
 }*/
-#portid::after{
+
+#portid::after {
     content: "";
     clear: both;
     display: table;
 }
-#me{
+
+#me {
     float: left;
     width: 30%;
     margin: 2% 2% 2% 2%;
     border: 2%;
     overflow: hidden;
-
 }
-p{
+
+p {
     line-height: 150%;
     margin: 5% 5% 20px 5%;
 }
-footer{
+
+footer {
     text-align: center;
     width: 100%;
     background-color: beige;
     position: fixed;
-    bottom:0;
+    bottom: 0;
     clear: both;
 }
-.left{
+
+.left {
     margin-left: 5px;
     line-height: 100%;
-
 }
-#msg{
+
+#msg {
     width: 99%;
     height: 80px;
 }
-.input{
+
+.input {
     width: 99%;
 }
 
 /* this is where the jqueries will be held to make this site mobile responsive */
 
 @media screen and (max-width: 980px) {
-    header{
-        block-size: 980px
+    header {
+        width: 980px;
+    }
+    #me {
+        width: 50%;
+    }
+    .otherdiv {
+        width: initial
     }
 }
+
 @media screen and (max-width: 768px) {
-    header{
-        block-size: 768px
+    header {
+        width: 768px;
+    }
+    #me {
+        width: 50%;
+    }
+    .otherdiv {
+        width: 95%;
+        margin: 5% 2% 5% 2%;
+    }
+    #portid {
+        width: 95%;
+        margin: 5% 2% 5% 2%;
     }
 }
+
 @media screen and (max-width: 640px) {
-    header{
-        block-size: 640px
+    header {
+        width: 99%;
+        position: static;
+        text-overflow: ellipsis;
+    }
+    h1 {
+        width: 95%;
+        position: relative;
+        left: -65px;
+        text-align: center
+    }
+    #me {
+        width: 90%;
+        margin: 5% 2% 5% 2%;
+    }
+    .otherdiv {
+        width: 90%;
+    }
+    #portid {
+        width: 90%;
+        margin: 5% 2% 5% 2%;
+    }
+    .container {
+        width: 65%;
+    }
+    #about {
+        position: relative;
+        bottom: 5px;
+        left: -35%;
+    }
+    #portfolio {
+        position: relative;
+        bottom: 5px;
+        left: -35%;
+    }
+    #contact {
+        position: relative;
+        bottom: 5px;
+        left: -35%;
     }
 }
