@@ -161,6 +161,8 @@ footer {
 
 /* this is where the jqueries will be held to make this site mobile responsive */
 
+/* this media quary  is for a large device like a moniter and such */
+
 @media screen and (max-width: 980px) {
     header {
         width: 980px;
@@ -172,6 +174,8 @@ footer {
         width: initial
     }
 }
+
+/* this quary is for smaller devices such as ipads */
 
 @media screen and (max-width: 768px) {
     header {
@@ -189,6 +193,7 @@ footer {
         margin: 5% 2% 5% 2%;
     }
 }
+/* this is for mobile phones mainly */
 
 @media screen and (max-width: 640px) {
     header {
